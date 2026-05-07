@@ -1,0 +1,18 @@
+{"ts": "2026-05-04T06:26:21.502836+00:00", "kind": "program", "name": "health-check", "args": "", "session": "test"}
+{"ts": "2026-05-04T06:26:21.627421+00:00", "kind": "program", "name": "health-check", "args": "", "session": "test"}
+{"ts": "2026-05-04T06:26:21.750176+00:00", "kind": "program", "name": "health-check", "args": "", "session": "test"}
+{"ts": "2026-05-04T06:26:21.849667+00:00", "kind": "program", "name": "health-check", "args": "", "session": "test"}
+{"ts": "2026-05-04T06:26:21.962218+00:00", "kind": "program", "name": "health-check", "args": "", "session": "test"}
+{"ts": "2026-05-04T06:26:22.064815+00:00", "kind": "program", "name": "health-check", "args": "", "session": "test"}
+{"ts": "2026-05-04T06:26:22.192567+00:00", "kind": "program", "name": "health-check", "args": "", "session": "test"}
+{"ts": "2026-05-04T06:26:22.298693+00:00", "kind": "program", "name": "meta", "args": "task=evaluate", "session": "test"}
+{"ts": "2026-05-04T06:26:22.403519+00:00", "kind": "program", "name": "meta", "args": "task=evaluate", "session": "test"}
+{"ts": "2026-05-04T06:26:22.515058+00:00", "kind": "program", "name": "meta", "args": "task=evaluate", "session": "test"}
+{"ts": "2026-05-04T06:26:22.625139+00:00", "kind": "program", "name": "menu", "args": "", "session": "test"}
+{"ts": "2026-05-04T06:26:22.734075+00:00", "kind": "program", "name": "menu", "args": "", "session": "test"}
+{"ts": "2026-05-04T06:26:22.835477+00:00", "kind": "program", "name": "menu", "args": "", "session": "test"}
+{"ts": "2026-05-04T06:26:22.926702+00:00", "kind": "program", "name": "menu", "args": "", "session": "test"}
+{"ts": "2026-05-04T06:26:23.031049+00:00", "kind": "program", "name": "menu", "args": "", "session": "test"}
+{"ts": "2026-05-04T06:26:23.142894+00:00", "kind": "program", "name": "menu", "args": "", "session": "test"}
+{"ts": "2026-05-04T06:26:23.253040+00:00", "kind": "program", "name": "quickstart", "args": "", "session": "test"}
+{"ts": "2026-05-04T07:56:13.226833+00:00", "kind": "program", "name": "menu", "args": "", "session": "", "prompt_label": "show me the menu", "prompt_hash": "56f6689e", "token_est": 8}

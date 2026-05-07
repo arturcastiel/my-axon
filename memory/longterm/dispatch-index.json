@@ -1,0 +1,368 @@
+{
+  "axon-audit": {
+    "program": "axon-audit",
+    "description": "scrutinize axon audit boot chain registry internal references usefulness health score",
+    "source_file": "",
+    "compiled_at": "2026-05-04T08:07:33.372353+00:00Z"
+  },
+  "compile-optimizer": {
+    "program": "compile-optimizer",
+    "description": "compile optimizer scan rank candidates coverage verify test delegation audit",
+    "source_file": "",
+    "compiled_at": "2026-05-04T08:23:35.896646+00:00Z"
+  },
+  "health-check": {
+    "program": "health-check",
+    "description": "health-check program",
+    "source_file": "",
+    "compiled_at": "2026-05-04T09:52:04.535387+00:00Z"
+  },
+  "interactive": {
+    "program": "interactive",
+    "description": "interactive program",
+    "source_file": "",
+    "compiled_at": "2026-05-04T09:52:04.567861+00:00Z"
+  },
+  "meta": {
+    "program": "meta",
+    "description": "meta program",
+    "source_file": "",
+    "compiled_at": "2026-05-04T09:52:04.601722+00:00Z"
+  },
+  "mode-detect": {
+    "program": "mode-detect",
+    "description": "mode-detect program",
+    "source_file": "",
+    "compiled_at": "2026-05-04T09:52:04.636213+00:00Z"
+  },
+  "suggest-compile": {
+    "program": "suggest-compile",
+    "description": "suggest-compile program",
+    "source_file": "",
+    "compiled_at": "2026-05-04T09:52:04.670947+00:00Z"
+  },
+  "translate": {
+    "program": "translate",
+    "description": "translate program",
+    "source_file": "",
+    "compiled_at": "2026-05-04T09:52:04.704278+00:00Z"
+  },
+  "authoring-guide": {
+    "program": "authoring-guide",
+    "description": "Checklist and patterns for writing well-formed AXON programs",
+    "source_file": "",
+    "compiled_at": "2026-05-04T10:08:07.975321+00:00Z"
+  },
+  "axon-compare": {
+    "program": "axon-compare",
+    "description": "Search the web for AXON's online presence and compare it against similar agent orchestration / harness frameworks",
+    "source_file": "",
+    "compiled_at": "2026-05-04T10:08:08.003617+00:00Z"
+  },
+  "chat-folder": {
+    "program": "chat-folder",
+    "description": "Create or list chat folders \u2014 organize chats into projects",
+    "source_file": "",
+    "compiled_at": "2026-05-04T10:08:08.032615+00:00Z"
+  },
+  "chat-input": {
+    "program": "chat-input",
+    "description": "Process a free-text user message as a continuation of the active chat goal",
+    "source_file": "",
+    "compiled_at": "2026-05-04T10:08:08.061432+00:00Z"
+  },
+  "deps": {
+    "program": "deps",
+    "description": "Show program dependencies \u2014 what a program calls and what calls it",
+    "source_file": "",
+    "compiled_at": "2026-05-04T10:08:08.089669+00:00Z"
+  },
+  "dev-mode": {
+    "program": "dev-mode",
+    "description": "Toggle owner developer mode on or off (persists across sessions)",
+    "source_file": "",
+    "compiled_at": "2026-05-04T10:08:08.117881+00:00Z"
+  },
+  "dev-new": {
+    "program": "dev-new",
+    "description": "Scaffold a new program from template \u2014 workspace or addon",
+    "source_file": "",
+    "compiled_at": "2026-05-04T10:08:08.145922+00:00Z"
+  },
+  "discover": {
+    "program": "discover",
+    "description": "Find context waste \u2014 programs and tools consuming excessive context window space",
+    "source_file": "",
+    "compiled_at": "2026-05-04T10:08:08.173784+00:00Z"
+  },
+  "explain": {
+    "program": "explain",
+    "description": "Plain-English walkthrough of any program \u2014 what it does, what it needs, what it calls",
+    "source_file": "",
+    "compiled_at": "2026-05-04T10:08:08.202235+00:00Z"
+  },
+  "faq": {
+    "program": "faq",
+    "description": "Frequently asked questions about AXON \u2014 concepts, memory, programs, modes",
+    "source_file": "",
+    "compiled_at": "2026-05-04T10:08:08.230806+00:00Z"
+  },
+  "find-program": {
+    "program": "find-program",
+    "description": "Search installed programs by capability, keyword, or description",
+    "source_file": "",
+    "compiled_at": "2026-05-04T10:08:08.259897+00:00Z"
+  },
+  "gain": {
+    "program": "gain",
+    "description": "Longitudinal session analytics \u2014 context savings, program usage, efficiency trends",
+    "source_file": "",
+    "compiled_at": "2026-05-04T10:08:08.288453+00:00Z"
+  },
+  "glossary": {
+    "program": "glossary",
+    "description": "AXON terminology reference \u2014 memory scopes, ops, modes, concepts",
+    "source_file": "",
+    "compiled_at": "2026-05-04T10:08:08.316968+00:00Z"
+  },
+  "handoff": {
+    "program": "handoff",
+    "description": "Serialize current session state and prepare a handoff package for another agent or model",
+    "source_file": "",
+    "compiled_at": "2026-05-04T10:08:08.346238+00:00Z"
+  },
+  "harness-builder": {
+    "program": "harness-builder",
+    "description": "Interactive wizard \u2014 build a structured harness for an external AI agent using AXON",
+    "source_file": "",
+    "compiled_at": "2026-05-04T10:08:08.375100+00:00Z"
+  },
+  "help": {
+    "program": "help",
+    "description": "Show a guide for any program \u2014 what it does, inputs, and an example",
+    "source_file": "",
+    "compiled_at": "2026-05-04T10:08:08.403293+00:00Z"
+  },
+  "list-chats": {
+    "program": "list-chats",
+    "description": "Show all chats organized by folder \u2014 active chat highlighted",
+    "source_file": "",
+    "compiled_at": "2026-05-04T10:08:08.431463+00:00Z"
+  },
+  "list-programs": {
+    "program": "list-programs",
+    "description": "Catalog every program across all layers with description and location",
+    "source_file": "",
+    "compiled_at": "2026-05-04T10:08:08.460337+00:00Z"
+  },
+  "list-tools": {
+    "program": "list-tools",
+    "description": "Show all registered tools, their status, and what each one does",
+    "source_file": "",
+    "compiled_at": "2026-05-04T10:08:08.489291+00:00Z"
+  },
+  "memory-compact": {
+    "program": "memory-compact",
+    "description": "Summarize and archive old episodic memory to prevent unbounded log growth",
+    "source_file": "",
+    "compiled_at": "2026-05-04T10:08:08.518133+00:00Z"
+  },
+  "menu": {
+    "program": "menu",
+    "description": "AXON home screen \u2014 mode switcher, context display, command entry",
+    "source_file": "",
+    "compiled_at": "2026-05-04T10:08:08.546820+00:00Z"
+  },
+  "mode-build": {
+    "program": "mode-build",
+    "description": "BUILD mode \u2014 create and register new AXON programs",
+    "source_file": "",
+    "compiled_at": "2026-05-04T10:08:08.575199+00:00Z"
+  },
+  "mode-chat": {
+    "program": "mode-chat",
+    "description": "CHAT mode \u2014 manage conversation threads and project folders",
+    "source_file": "",
+    "compiled_at": "2026-05-04T10:08:08.603049+00:00Z"
+  },
+  "mode-dev": {
+    "program": "mode-dev",
+    "description": "DEV mode \u2014 kernel editing, system programs, AXON authoring (owner only)",
+    "source_file": "",
+    "compiled_at": "2026-05-04T10:08:08.631456+00:00Z"
+  },
+  "mode-memory": {
+    "program": "mode-memory",
+    "description": "MEMORY mode \u2014 browse what AXON knows and remembers",
+    "source_file": "",
+    "compiled_at": "2026-05-04T10:08:08.660529+00:00Z"
+  },
+  "mode-plan": {
+    "program": "mode-plan",
+    "description": "PLAN mode \u2014 goals and multi-step task tracking",
+    "source_file": "",
+    "compiled_at": "2026-05-04T10:08:08.689031+00:00Z"
+  },
+  "mode-router": {
+    "program": "mode-router",
+    "description": "Route free-text input to the active mode's handler",
+    "source_file": "",
+    "compiled_at": "2026-05-04T10:08:08.717744+00:00Z"
+  },
+  "mode-run": {
+    "program": "mode-run",
+    "description": "RUN mode \u2014 launch installed programs and add-ons",
+    "source_file": "",
+    "compiled_at": "2026-05-04T10:08:08.747195+00:00Z"
+  },
+  "mode-system": {
+    "program": "mode-system",
+    "description": "SYSTEM mode \u2014 tools, output mode, session, and health",
+    "source_file": "",
+    "compiled_at": "2026-05-04T10:08:08.776718+00:00Z"
+  },
+  "new-chat": {
+    "program": "new-chat",
+    "description": "Create a new chat in a folder \u2014 give it a name and a goal",
+    "source_file": "",
+    "compiled_at": "2026-05-04T10:08:08.805234+00:00Z"
+  },
+  "open-chat": {
+    "program": "open-chat",
+    "description": "Resume a specific chat by name \u2014 restores its context and goal",
+    "source_file": "",
+    "compiled_at": "2026-05-04T10:08:08.833498+00:00Z"
+  },
+  "output-layer": {
+    "program": "output-layer",
+    "description": "Toggle or configure the AXON output layer (confidence bar, drift indicator)",
+    "source_file": "",
+    "compiled_at": "2026-05-04T10:08:08.862704+00:00Z"
+  },
+  "plan-add": {
+    "program": "plan-add",
+    "description": "Add one or more tasks to an existing plan",
+    "source_file": "",
+    "compiled_at": "2026-05-04T10:08:08.891694+00:00Z"
+  },
+  "plan-done": {
+    "program": "plan-done",
+    "description": "Mark a task complete, or mark a whole plan complete",
+    "source_file": "",
+    "compiled_at": "2026-05-04T10:08:08.921306+00:00Z"
+  },
+  "plan-list": {
+    "program": "plan-list",
+    "description": "Show all plans with task progress \u2014 active plans first",
+    "source_file": "",
+    "compiled_at": "2026-05-04T10:08:08.950467+00:00Z"
+  },
+  "plan-new": {
+    "program": "plan-new",
+    "description": "Create a new plan with a goal and optional starting tasks",
+    "source_file": "",
+    "compiled_at": "2026-05-04T10:08:08.978275+00:00Z"
+  },
+  "plan-view": {
+    "program": "plan-view",
+    "description": "Show full task list and notes for one plan",
+    "source_file": "",
+    "compiled_at": "2026-05-04T10:08:09.007160+00:00Z"
+  },
+  "quickstart": {
+    "program": "quickstart",
+    "description": "2-minute interactive tour \u2014 what AXON is, what it can do, and how to do it",
+    "source_file": "",
+    "compiled_at": "2026-05-04T10:08:09.035760+00:00Z"
+  },
+  "register-preference": {
+    "program": "register-preference",
+    "description": "Save a personal preference \u2014 AXON will apply it automatically every session",
+    "source_file": "",
+    "compiled_at": "2026-05-04T10:08:09.064487+00:00Z"
+  },
+  "register-tool": {
+    "program": "register-tool",
+    "description": "Guided wizard to add a new tool entry to REGISTRY.json (dev-mode required)",
+    "source_file": "",
+    "compiled_at": "2026-05-04T10:08:09.093167+00:00Z"
+  },
+  "resume": {
+    "program": "resume",
+    "description": "Check episodic log for interrupted sessions and offer to resume the latest one",
+    "source_file": "",
+    "compiled_at": "2026-05-04T10:08:09.121612+00:00Z"
+  },
+  "run-tests": {
+    "program": "run-tests",
+    "description": "Run the AXON test suite \u2014 unit, regression, integration \u2014 and display results.",
+    "source_file": "",
+    "compiled_at": "2026-05-04T10:08:09.150054+00:00Z"
+  },
+  "session-summary": {
+    "program": "session-summary",
+    "description": "Generate a compact digest of what happened in a session \u2014 programs run, L: changes, drift, confidence",
+    "source_file": "",
+    "compiled_at": "2026-05-04T10:08:09.179074+00:00Z"
+  },
+  "show-memory": {
+    "program": "show-memory",
+    "description": "Show everything AXON has saved across sessions \u2014 longterm facts and episodic history",
+    "source_file": "",
+    "compiled_at": "2026-05-04T10:08:09.207339+00:00Z"
+  },
+  "show-preferences": {
+    "program": "show-preferences",
+    "description": "Show all saved personal preferences \u2014 what AXON loads automatically each session",
+    "source_file": "",
+    "compiled_at": "2026-05-04T10:08:09.235269+00:00Z"
+  },
+  "simulate": {
+    "program": "simulate",
+    "description": "Dry-run any program without touching real state \u2014 shows what would happen",
+    "source_file": "",
+    "compiled_at": "2026-05-04T10:08:09.262972+00:00Z"
+  },
+  "stats": {
+    "program": "stats",
+    "description": "Workspace health dashboard \u2014 programs, tools, sessions, confidence, drift, queue, cron",
+    "source_file": "",
+    "compiled_at": "2026-05-04T10:08:09.291669+00:00Z"
+  },
+  "status": {
+    "program": "status",
+    "description": "Snapshot of your current session \u2014 memory, game state, recent actions",
+    "source_file": "",
+    "compiled_at": "2026-05-04T10:08:09.320180+00:00Z"
+  },
+  "switch-chat": {
+    "program": "switch-chat",
+    "description": "Save current chat context and switch to another chat",
+    "source_file": "",
+    "compiled_at": "2026-05-04T10:08:09.347946+00:00Z"
+  },
+  "undo": {
+    "program": "undo",
+    "description": "Roll back the L: memory changes made by the last program run",
+    "source_file": "",
+    "compiled_at": "2026-05-04T10:08:09.376717+00:00Z"
+  },
+  "versions": {
+    "program": "versions",
+    "description": "Show version history of a program from episodic memory and file header",
+    "source_file": "",
+    "compiled_at": "2026-05-04T10:08:09.405594+00:00Z"
+  },
+  "code-dev-explain": {
+    "program": "code-dev-explain",
+    "description": "code-dev explain N: deep-dive annotated explanation of a PR for reviewers",
+    "source_file": "",
+    "compiled_at": "2026-05-06T10:56:54.283748+00:00Z"
+  },
+  "code-dev-pr-spec": {
+    "program": "code-dev-pr-spec",
+    "description": "code-dev pr-spec N: write full implementation spec for PR-N",
+    "source_file": "",
+    "compiled_at": "2026-05-06T10:56:54.313362+00:00Z"
+  }
+}

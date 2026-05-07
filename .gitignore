@@ -1,0 +1,15 @@
+# Machine-specific keys — never push
+memory/local/
+
+# Runtime caches
+memory/kv-store/cache.db
+memory/semantic-index/
+memory/episodic/prompt-log.jsonl
+
+# Raw library files (PDFs) — shadow notes and explained docs are kept
+libraries/*/articles/
+libraries/*/*.pdf
+libraries/*/*.PDF
+
+# Scratch
+memory/working/
