@@ -8,16 +8,38 @@ Status:  active
 
 ## MANDATORY RULE
 
-**Every file that is read, studied, or modified during a session MUST have a corresponding shadow
-findings file. Shadowing is not optional — it is a gate. A file is not "done" until its shadow
-exists and is current.**
+**Shadow is a hard gate — not a suggestion. It applies to every project, every codebase, every session.**
+
+### Rule 1 — Shadow before source (ALWAYS)
+Before reading any source file, check shadow first.
+Shadow hit → load shadow, skip source read entirely.
+Shadow miss or stale → read source AND write shadow immediately after.
+**No exceptions. No "quick glances". No "I'll shadow it later".**
+
+### Rule 2 — Shadow gates every code-dev entry
+When any code-dev subcommand (study, plan, pr, log, audit) fires against a project with a codebase:
+- The shadow index stats are shown immediately
+- Stale files are flagged before any work begins
+- Questions and research start from shadow findings, not raw source
+
+### Rule 3 — Questions leverage shadow first
+When a question is asked about any code — function, struct, behavior, API — the answer must:
+1. Check shadow for prior findings on that file
+2. If shadow covers it → answer from shadow (zero source tokens)
+3. If shadow is absent or does not cover it → read source → write shadow → then answer
+
+**Going directly to the codebase without checking shadow is a violation.**
+Violation type: `shadow-bypass` — LOG(WARN, "shadow-bypass: {file}") + append igap entry.
+
+### Rule 4 — Every modified file is shadowed before session ends
+All edits must have a shadow update logged before the session closes.
+This is enforced by the P4 session-end gate.
 
 This applies to:
 - Source files read for context (even once, even briefly)
 - Headers or schemas read as dependencies
 - Any file edited, regardless of how small the change
-
-There are no exceptions for "small reads", "quick glances", or files that seem unimportant.
+- Any file mentioned in a code-dev question or discussion
 
 ---
 
