@@ -10,7 +10,7 @@ Source: claude/lgr-summary-vectors/LGR_Implementation_Masterplan.md
 **Complexity:** small
 **Repo:** opm-common
 **Branch:** lgr-summary
-**Status:** ✅ pushed (commit 4ac7f0a5c)
+**Status:** ✅ merged upstream (PR #5140, commit 0066645cd → upstream/master 20f7dcb15)
 **Depends on:** nothing
 **Scope:** SummaryNode.hpp, SummaryNode.cpp, SummaryConfig.hpp, SummaryConfig.cpp
 

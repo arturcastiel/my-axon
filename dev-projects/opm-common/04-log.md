@@ -4,16 +4,63 @@
 
 ## Entries
 
+### [PR-001-harm] 2026-05-07 — Harmonization: rebase onto upstream/master + API migration
+
+**Status:** API fixes applied, ready to build + test
+**Branch:** lgr-summaryconfig (rebased onto upstream/master 20f7dcb15)
+
+PR-000 was merged upstream (PR #5140). PR-001 depended on the old PR-000 API (`lgr_`/`.lgr(lgr_info{})`) and needed harmonization:
+
+**Step 1 — Rebase:**
+- `git rebase upstream/master` triggered conflict at commit 1/5 (old PR-000: 4ac7f0a5c)
+- Resolved with `git rebase --skip` — old PR-000 commit superseded by upstream merge
+- 4 PR-001 commits applied cleanly on top of new upstream/master
+
+**Step 2 — API fixes in `SummaryConfig.cpp`:**
+- `keywordLW`: dropped `lgr_info` local variable; `.lgr(lgr)` → `.lgr_name(lgr_name)`
+- `keywordLB`: dropped `i`, `j`, `k` reads and `lgr_info`; `.lgr(lgr_info{...})` → `.lgr_name(lgr_name)`
+- `keywordLC`: dropped `coords_defaulted`, `i`, `j`, `k`, and `lgr` local; → `.lgr_name(lgr_name)`
+
+**Step 3 — Test updates in `test_SummaryConfigNode.cpp`:**
+- `LGR_SummaryConfig_Deck` (6 tests): all `.lgr()` → `.lgr_name()`, all `->ijk[N]` dropped
+- `LGR_Schema_Inline` (5 tests): same pattern; added BOOST_REQUIRE guards before dereference
+- PR-001's 3-case `LGR` suite was already dropped during rebase (superseded by PR-000's 6-case suite)
+- `ParseKeywords/Category` and `NoSumLgr` suites: no changes needed (no API dependency)
+
+**Pending:** Step 10 — build and run `ctest -R "^(SummaryNode|SummaryConfigTests|Serialization)$"`
+
+---
+
+### [PR-000-rev1] 2026-05-07 — operator< simplification + expanded tests (review response)
+
+**Status:** ready to commit
+**Branch:** lgr-summary
+
+Review feedback from @bska:
+- `operator<` was needlessly complex manual logic; rewrite using `std::make_tuple` + `std::optional::operator<`
+- Sort by LGR name *before* entity/number to group global vectors ahead of per-LGR vectors
+- Add explicit unit tests for `operator==` and `operator<` for Block and Connection categories
+
+Files changed:
+- `opm/input/eclipse/EclipseState/SummaryConfig/SummaryConfig.cpp` — `operator<` collapsed to 3 single-line `make_tuple` comparisons; LGR-first ordering in all categories
+- `tests/test_SummaryConfigNode.cpp` — 3 new test cases: `lgr_operator_equal_block_and_connection`, `lgr_operator_less_lgr_before_entity`, `lgr_operator_less_null_before_set`
+
+No drift from revised spec. `operator==` unchanged (already clean).
+
+---
+
 ### [PR-000] 2026-05-04 — Data structures & category routing
 
 **Status:** complete
 **Branch:** lgr-summary (commit 4ac7f0a5c)
 
 Files changed:
-- `opm/io/eclipse/SummaryNode.hpp` — added `lgr_info::operator==` and `lgr_info::serializeOp`
 - `opm/io/eclipse/SummaryNode.cpp` — added `case 'L':` to `category_from_keyword()`
-- `opm/input/eclipse/EclipseState/SummaryConfig/SummaryConfig.hpp` — added `lgr_` field, getter, setter; fixed `operator EclIO::SummaryNode()`; fixed `serializeOp()`
-- `opm/input/eclipse/EclipseState/SummaryConfig/SummaryConfig.cpp` — fixed `operator==` and `operator<` to include `lgr_` for Well/Block/Connection
+- `opm/input/eclipse/EclipseState/SummaryConfig/SummaryConfig.hpp` — added `lgr_name_` field, getter, setter; fixed `operator EclIO::SummaryNode()`; fixed `serializeOp()`
+- `opm/input/eclipse/EclipseState/SummaryConfig/SummaryConfig.cpp` — fixed `operator==` and `operator<` to include `lgr_name_` for Well/Block/Connection; `serializationTestObject()` covers `lgr_name_`
+- `tests/test_SummaryNode.cpp` — `Category/LGR_category_routing` test case
+- `tests/test_SummaryConfigNode.cpp` — 6 LGR test cases (3 original + 3 added per review)
+- `opm/io/eclipse/SummaryNode.hpp` — **unchanged from master**
 
 No drift from plan.
 

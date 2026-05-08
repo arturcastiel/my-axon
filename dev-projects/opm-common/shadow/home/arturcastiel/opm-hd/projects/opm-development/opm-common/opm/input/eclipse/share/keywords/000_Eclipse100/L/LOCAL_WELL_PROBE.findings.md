@@ -1,7 +1,7 @@
 # SHADOW: LOCAL_WELL_PROBE keyword JSON
 source-path: /home/arturcastiel/opm-hd/projects/opm-development/opm-common/opm/input/eclipse/share/keywords/000_Eclipse100/L/LOCAL_WELL_PROBE
 shadow-created: 2026-05-05
-shadow-updated: 2026-05-05
+shadow-updated: 2026-05-07
 pr: PR01
 
 ## Summary
@@ -13,7 +13,7 @@ Instructs the OPM parser how many items each deck record contains and what types
 {
   "name": "LOCAL_WELL_PROBE",
   "sections": ["SUMMARY"],
-  "deck_name_regex": "LW.+",
+  "deck_name_regex": "LW[A-Z]+",
   "items": [
     { "name": "LGR_NAME", "value_type": "STRING" },
     { "name": "WELLS",    "value_type": "STRING", "size_type": "ALL" }
@@ -22,7 +22,7 @@ Instructs the OPM parser how many items each deck record contains and what types
 ```
 
 ## Key Facts
-- `deck_name_regex: "LW.+"` — matches all LW* keywords (LWOPR, LWOPT, LWOIR, etc.)
+- `deck_name_regex: "LW[A-Z]+"` — matches LW* keywords with uppercase letters only; excludes `_X` and numeric suffix patterns (@bska R1/R3)
 - NO `"size"` field — table format; one record per LGR/well pair, block terminated by `/`
 - `"size": 1` would mean a single fixed record → rejects multi-record table → **was the Jenkins bug**
 - `LOCAL_CONNECTION_PROBE` and `LOCAL_BLOCK_PROBE` were already correct (no `"size"` field)
@@ -44,3 +44,4 @@ Example: `'INJ'  'G1'  'LGR1'  2  2  8335  'GAS' /`
 | 2026-05-06 | Jenkins failure | `"size": 1` caused parser to reject multi-record LWBHP blocks → `OpmInputError: Extra line starting with '/'` |
 | 2026-05-06 | fix | Removed `"size": 1` — now table format matching LOCAL_CONNECTION_PROBE/LOCAL_BLOCK_PROBE |
 | 2026-05-06 | inline tests | `LGR_Schema_Inline` suite added to `test_SummaryConfigNode.cpp` — would have caught this immediately |
+| 2026-05-07 | PR1-review | regex tightened to `LW[A-Z]+` (@bska R1/R3) — excludes `_X` and numeric suffix patterns |

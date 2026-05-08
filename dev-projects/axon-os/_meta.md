@@ -4,6 +4,6 @@ status:       active
 phase:        2-plan
 codebase:     <see my-axon/memory/local/axon-os-codebase.md — machine-specific, gitignored>
 parent:       (none)
-sub-projects: []
+sub-projects: ["library-dev-shadow-meta", "axon-os-docs"]
 created:      2026-05-07
 updated:      2026-05-07
