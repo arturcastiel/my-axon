@@ -2,6 +2,6 @@
 slug:     opm-common
 status:   active
 phase:    3-pr
-codebase: /home/arturcastiel/opm-hd/projects/opm-development/opm-common
+codebase: <see my-axon/memory/local/opm-common-codebase.md — machine-specific, gitignored>
 created:  2026-04-01
 updated:  2026-05-05

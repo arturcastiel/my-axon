@@ -2,7 +2,7 @@
 slug:         axon-os
 status:       active
 phase:        2-plan
-codebase:     /home/arturcastiel/opm-hd/axon-project/axon
+codebase:     <see my-axon/memory/local/axon-os-codebase.md — machine-specific, gitignored>
 parent:       (none)
 sub-projects: []
 created:      2026-05-07
